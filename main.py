@@ -29,20 +29,27 @@ def main():
                 contact.show_contacts()
                 
             case "3":
+                contact.show_contacts()
                 contact_id = int(input('Numero do contato:')) 
                 contact.contact_detail(contact_id)
                 
             case "4":
-                pass
+                contact.show_contacts()
+                contact_id = int(input('Numero do contato:')) 
+                contact.edit_contact(contact_id)
                 
             case "5":
-                pass
+                contact.show_contacts()
+                contact_id = int(input('Numero do contato:')) 
+                contact.change_state_from_favorite_contact(contact_id)
                 
             case "6":
-                pass
+                contact.show_favorite_contacts()
                 
             case "7":
-                pass
+                contact.show_contacts()
+                contact_id = int(input('Numero do contato para remoção: ')) 
+                contact.delete_contact(contact_id)
                 
             case "0":
                 print("Saindo...")
